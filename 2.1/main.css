@@ -1,0 +1,75 @@
+/* Body properties */
+body {
+    background-color: rgb(125, 125, 125); 
+    color: rgb(39, 39, 39);
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Navigation bar properties */
+nav {
+    height: 60px;
+    width: 400px;
+    padding: 5px;
+    line-height: 30px;
+}
+
+/* Navigation link properties */
+nav a {
+    color: rgb(175, 14, 14);
+}
+
+/* Footer properties */
+footer {
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    color: rgb(245, 245, 245);
+}
+
+/* Meme image properties */
+#memeImage {
+    justify-items: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    width: 600px;
+}
+
+/* Header properties */
+header {
+    text-align: center;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* h1 styles */
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Button styling */
+.button {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(153, 15, 15);
+    border-radius: 50%;
+    border: 8px solid rgb(191, 191, 191);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Button hover */
+.button:hover::before {
+    content: "Srsly  ";
+}
