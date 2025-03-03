@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colorgame.css">
+    <script src="colorgame.js"></script>
+    <title>Color Memory Game</title>
+</head>
+<body>
+    <!-- div tag to contain all of the game contents tags -->
+    <div class="gameContainer">
+        <h1>Color Memory Game</h1>
+
+        <p>Click on the color that matches the color of the word displayed below.</p>
+
+        <button class = "gameButton" id = "startGameButton" onclick="startGame()">Start Game</button>
+
+        <div id="wordDisplay" class="wordDisplay"></div>
+
+        <div id="choicesContainer" class="choicesContainer" style="display: none;">
+            <button class="choiceButton" onclick="checkAnswer(this)"></button>
+            <button class="choiceButton" onclick="checkAnswer(this)"></button>
+            <button class="choiceButton" onclick="checkAnswer(this)"></button>
+        </div>
+
+        <p id="feedbackMessage"></p>
+
+        <button class = "gameButton" id = "nextRoundButton" style="display: none;" onclick="startGame()">Next Round</button>
+    </div>
+
+    <footer>
+        <nav>
+            <a href="https://github.com/toolpathguy/CSC102">Github Account</a>
+            <a href="https://www.linkedin.com/in/kevinastrom/">Linkedin</a>
+            <a href="https://www.instagram.com/toolpathguy/">Instagram</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
