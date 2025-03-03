@@ -139,13 +139,13 @@ function checkAnswer(button)
     
     // Compare selected color with the correct color
     if (selectedColor == correctColor) 
-    {
-        feedbackMessage.textContent = "Correct!";
-    } 
-    else 
-    {
-        feedbackMessage.textContent = "Wrong! The correct color was " + correctColor;
-    }
+        {
+            feedbackMessage.innerHTML = "<strong>Correct!</strong>";
+        } 
+        else 
+        {
+            feedbackMessage.innerHTML = "<strong>Wrong!</strong> The correct color was <span style='color:" + correctColor + "'>" + correctColor + "</span>.";
+        }
     
     // show Next Round button
     nextRoundButton.style.display = "block";
