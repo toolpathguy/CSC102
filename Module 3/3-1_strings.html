@@ -1,0 +1,35 @@
+<!-- Kevin Strom --> 
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Palindrome Checker</title> 
+        <link rel="stylesheet" href="strings.css"> 
+    </head> 
+    <body> 
+        <div class="container"> <!-- main container for the page content -->
+            <nav> <!-- navigation bar for the site -->
+                <ul> <!-- list of navigation links -->
+                    <li><a href="3-2_home.html">Home</a></li> <!-- link to home page -->
+                    <li><a href="3-1_strings.html" class="active">Checker</a></li> <!-- link to checker page; active because this is the current page -->
+                </ul>
+            </nav>
+            <header> <!-- header section that includes the main title -->
+                <h1>Palindrome Checker</h1> <!-- displays the main title of the page -->
+            </header> 
+            <form id="palindromeForm"> <!-- form opening tag-->
+                <label for="inputString">Enter a Word:</label> <!-- label for the input field to prompt the user -->
+                <br>
+                <br>
+                <input type="text" id="inputString" name="inputString" required> <!-- text input field,'required' ensures a value is entered -->
+                <br>
+                <br>
+                <input type="submit" name="action" value="Check"> <!-- submit button labeled "Check" to process the verification -->
+                <input type="submit" name="action" value="Done" formnovalidate> <!-- submit button labeled "Done" -->
+            </form> 
+            <div id="result"></div> <!-- container where the result messages will be displayed -->
+        </div>
+    </body> 
+    <script src="./3-1_strings.js"></script> 
+</html> 

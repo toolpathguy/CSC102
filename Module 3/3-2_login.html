@@ -1,0 +1,33 @@
+<!-- kevin strom -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="strings.css">
+    </head>
+    <body class="login">
+        <div class="container"> <!-- main container for the page content -->
+            <form id="loginForm""> <!-- starts the form for user login -->
+                <label for="firstName">First Name:</label> <!-- label for first name input field -->
+                <br>
+                <input type="text" id="firstName" name="firstName" required> <!-- text input field for first name, required -->
+                <br>
+                <br> 
+                <label for="lastName">Last Name:</label> <!-- label for last name input field -->
+                <br>
+                <input type="text" id="lastName" name="lastName" required> <!-- text input field for last name, required -->
+                <br>
+                <br>
+                <label for="uatZip">UAT Zip Code:</label> <!-- label for uat zip code input field -->
+                <br>
+                <input type="text" id="uatZip" name="uatZip" required> <!-- text input field for uat zip code, required -->
+                <br>
+                <br> 
+                <input type="submit" value="Login"> <!-- submit button labeled "Login" -->
+            </form>
+        </div>
+        <script src="3-2_login.js"></script> <!-- links to the external js file for login functionality -->
+    </body>
+</html>
