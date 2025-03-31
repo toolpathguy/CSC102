@@ -1,0 +1,104 @@
+/* Body properties */
+body {
+    background-color: rgb(125, 125, 125); 
+    color: rgb(39, 39, 39);
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Navigation bar properties */
+nav {
+    height: 60px;
+    width: 100%; /* Make the nav bar span the full width */
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    gap: 15px; /* Add spacing between items */
+}
+
+/* Navigation link properties */
+nav a {
+    color: rgb(175, 14, 14);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Styling for the navigation button */
+nav button {
+    padding: 10px 20px;
+    background-color: rgb(153, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: rgb(123, 123, 123);
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+nav button:active {
+    background-color: rgb(123, 123, 123);
+    transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+
+/* Footer properties */
+footer {
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    color: rgb(245, 245, 245);
+}
+
+/* Meme image properties */
+#memeImage {
+    justify-items: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    width: 600px;
+}
+
+/* Header properties */
+header {
+    text-align: center;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* h1 styles */
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Button styling */
+.button {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(153, 15, 15);
+    border-radius: 50%;
+    border: 8px solid rgb(191, 191, 191);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Button hover */
+.button:hover::before {
+    content: "Srsly  ";
+}

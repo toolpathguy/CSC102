@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 15 Linux Commands</title>
+    <link rel="stylesheet" href="linux_table.css">
+</head>
+<body>
+    <nav>
+        <button onclick="location.href='../../Final_Project.html'">Go Home</button>
+    </nav>
+    <h1>Top 15 Linux Commands for Beginners</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>How to Use</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ls</td>
+                <td>Lists files and directories in the current directory.</td>
+                <td>
+                    `ls` - Displays the contents of the current directory.<br>
+                    `ls -l` - Displays detailed information about files.<br>
+                    `ls -a` - Includes hidden files in the listing.
+                </td>
+            </tr>
+            <tr>
+                <td>cd</td>
+                <td>Changes the current directory.</td>
+                <td>
+                    `cd folder_name` - Navigate to a specific folder.<br>
+                    `cd ..` - Move up one directory.<br>
+                    `cd ~` - Navigate to the home directory.
+                </td>
+            </tr>
+            <tr>
+                <td>pwd</td>
+                <td>Prints the current working directory.</td>
+                <td>
+                    `pwd` - Displays the full path of the current directory.
+                </td>
+            </tr>
+            <tr>
+                <td>mkdir</td>
+                <td>Creates a new directory.</td>
+                <td>
+                    `mkdir new_folder` - Creates a folder named "new_folder".<br>
+                    `mkdir -p parent/child` - Creates parent and child directories.
+                </td>
+            </tr>
+            <tr>
+                <td>rm</td>
+                <td>Removes files or directories.</td>
+                <td>
+                    `rm file.txt` - Deletes a file named "file.txt".<br>
+                    `rm -r folder_name` - Deletes a folder and its contents.<br>
+                    `rm -i file.txt` - Prompts before deleting a file.
+                </td>
+            </tr>
+            <tr>
+                <td>cp</td>
+                <td>Copies files or directories.</td>
+                <td>
+                    `cp file.txt backup.txt` - Copies "file.txt" to "backup.txt".<br>
+                    `cp -r folder1 folder2` - Copies a folder and its contents.
+                </td>
+            </tr>
+            <tr>
+                <td>mv</td>
+                <td>Moves or renames files or directories.</td>
+                <td>
+                    `mv file.txt new_file.txt` - Renames "file.txt" to "new_file.txt".<br>
+                    `mv file.txt /path/to/folder` - Moves a file to a different folder.
+                </td>
+            </tr>
+            <tr>
+                <td>cat</td>
+                <td>Displays the contents of a file.</td>
+                <td>
+                    `cat file.txt` - Displays the contents of "file.txt".<br>
+                    `cat file1.txt file2.txt` - Concatenates and displays multiple files.
+                </td>
+            </tr>
+            <tr>
+                <td>echo</td>
+                <td>Prints text to the terminal or writes to a file.</td>
+                <td>
+                    `echo "Hello World"` - Prints "Hello World" to the terminal.<br>
+                    `echo "Hello" > file.txt` - Writes "Hello" to "file.txt".
+                </td>
+            </tr>
+            <tr>
+                <td>touch</td>
+                <td>Creates an empty file or updates the timestamp of an existing file.</td>
+                <td>
+                    `touch new_file.txt` - Creates a file named "new_file.txt".<br>
+                    `touch -c file.txt` - Updates the timestamp without creating a new file.
+                </td>
+            </tr>
+            <tr>
+                <td>chmod</td>
+                <td>Changes file permissions.</td>
+                <td>
+                    `chmod +x script.sh` - Makes "script.sh" executable.<br>
+                    `chmod 644 file.txt` - Sets read/write permissions for the owner and read-only for others.
+                </td>
+            </tr>
+            <tr>
+                <td>chown</td>
+                <td>Changes file ownership.</td>
+                <td>
+                    `chown user file.txt` - Changes the owner of "file.txt" to "user".<br>
+                    `chown user:group file.txt` - Changes the owner and group of "file.txt".
+                </td>
+            </tr>
+            <tr>
+                <td>grep</td>
+                <td>Searches for a pattern in a file.</td>
+                <td>
+                    `grep "error" log.txt` - Finds "error" in "log.txt".<br>
+                    `grep -i "error" log.txt` - Case-insensitive search for "error".
+                </td>
+            </tr>
+            <tr>
+                <td>find</td>
+                <td>Searches for files and directories.</td>
+                <td>
+                    `find . -name "*.txt"` - Finds all ".txt" files in the current directory.<br>
+                    `find /path -type d` - Finds all directories in the specified path.
+                </td>
+            </tr>
+            <tr>
+                <td>man</td>
+                <td>Displays the manual for a command.</td>
+                <td>
+                    `man ls` - Displays the manual for the "ls" command.<br>
+                    `man -k keyword` - Searches for commands related to a keyword.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

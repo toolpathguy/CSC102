@@ -1,0 +1,301 @@
+/* Global and Body Setup */
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body 
+{
+    background-color: rgb(240, 248, 255);
+    background-image: url("Module%203/assets/dotGridBG.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+/* Login Page Specific */
+
+body.login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.login .container 
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Container and Header */
+
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header
+{
+    text-align: center;
+    padding: 20px;
+}
+
+h1
+{
+    color: rgb(20, 172, 237);
+}
+
+/* Form Styling */
+
+form
+{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+
+input[type="text"]
+{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+input[type="submit"]
+{
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(20, 172, 237);
+    cursor: pointer;
+}
+
+#inputString,
+#firstName,
+#lastName,
+#uatZip
+{
+    border-radius: 10em;
+}
+
+/* Result Container */
+
+#result
+{
+    display: none;
+    font-size: 1.2em;
+    color: rgb(20, 172, 237);
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Form Specific */
+
+#loginForm
+{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+nav
+{
+    margin-bottom: 20px;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li
+{
+    margin: 0 10px;
+    position: relative; /* Ensure the dropdown is positioned relative to the parent link */
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(20, 172, 237);
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a.active,
+nav ul li a:hover
+{
+    background-color: rgb(20, 172, 237);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+/* Dropdown Menu Styling */
+nav ul li ul
+{
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 248, 255);
+    padding: 15px; /* Increased padding for more space */
+    list-style: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px; /* Slightly larger border radius for a smoother look */
+    margin-top: 10px; /* Adds space between the parent link and the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+    left: 50%; /* Centers the dropdown horizontally */
+    transform: translateX(-50%); /* Adjusts the dropdown to align with the center of the parent */
+    text-align: center; /* Centers the text inside the dropdown items */
+}
+
+nav ul li ul li
+{
+    margin-bottom: 10px; /* Adds spacing between dropdown items */
+}
+
+nav ul li ul li:last-child
+{
+    margin-bottom: 0; /* Removes margin for the last item */
+}
+
+nav ul li ul li a
+{
+    text-decoration: none;
+    color: rgb(20, 172, 237);
+    font-weight: bold;
+    padding: 10px 20px; /* Adds padding inside each dropdown link */
+    display: block; /* Ensures the entire link area is clickable */
+    border-radius: 4px; /* Adds a slight rounding to the dropdown links */
+    transition: background-color 0.3s;
+}
+
+nav ul li ul li a:hover
+{
+    background-color: rgb(20, 172, 237);
+    color: rgb(255, 255, 255);
+}
+
+nav ul li:hover ul
+{
+    display: block; /* Shows the dropdown when hovering over the parent link */
+}
+
+/* Navigation Button Styling */
+nav button
+{
+    padding: 10px 20px;
+    background-color: rgb(20, 172, 237);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover
+{
+    background-color: rgb(15, 130, 180);
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+nav button:active
+{
+    background-color: rgb(10, 100, 150);
+    transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+
+/* Button Container */
+
+.buttonContainer
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Link Button Styling */
+
+.linkButton
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.linkButton:hover
+{
+    background-color: rgb(230, 230, 230);
+    transform: scale(1.05);
+}
+
+.linkButton img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.linkButton span
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.logoutButton
+{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(20, 172, 237);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logoutButton:hover
+{
+    background-color: rgb(15, 130, 180);
+}

@@ -1,0 +1,98 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(255, 174, 0);
+    background-color: rgb(29, 183, 221);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.gameContainer 
+{
+    background: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.728);
+    text-align: center;
+}
+
+.wordDisplay 
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.choicesContainer 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.choiceButton 
+{
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.choiceButton:hover 
+{
+    opacity: 0.8;
+}
+
+.gameButton
+{
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.402);
+    text-align: center;
+    align-self: center;
+}
+
+.gameButton:hover 
+{
+    background-color: rgb(0, 86, 179);
+}
+
+#feedbackMessage 
+{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+nav 
+{
+    height: 60px;
+    width: 400px;
+    padding: 5px;
+    line-height: 30px;
+}
+
+nav a 
+{
+    color: rgb(255, 255, 255);
+}

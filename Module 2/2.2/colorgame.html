@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colorgame.css">
+    <script src="colorgame.js"></script>
+    <title>Color Memory Game</title>
+</head>
+<body>
+    <!-- div tag to contain all of the game contents tags -->
+    <div class="gameContainer">
+        <h1>Color Memory Game</h1> <!-- h1 tag for the title of the game -->
+
+        <p>Click on the color that matches the color of the word displayed below.</p> <!-- p tag for the instructions of the game -->
+
+        <button class = "gameButton" id = "startGameButton" onclick="startGame()">Start Game</button> <!-- button tag to start the game -->
+
+        <div id="wordDisplay" class="wordDisplay"></div> <!-- div tag to display the word -->
+
+        <div id="choicesContainer" class="choicesContainer" style="display: none;"> <!-- div tag to contain the color choices -->
+            <button class="choiceButton" onclick="checkAnswer(this)"></button> <!-- button tag for the color choices -->
+            <button class="choiceButton" onclick="checkAnswer(this)"></button> <!-- button tag for the color choices -->
+            <button class="choiceButton" onclick="checkAnswer(this)"></button> <!-- button tag for the color choices -->
+        </div>
+
+        <p id="feedbackMessage"></p> <!-- p tag to display the feedback message -->
+
+        <button class = "gameButton" id = "nextRoundButton" style="display: none;" onclick="startGame()">Next Round</button> <!-- button tag to start the next round -->
+    </div>
+
+    <footer> <!-- footer tag to contain the nav links -->
+        <nav>
+            <button class = "gameButton" onclick="location.href='../../Final_Project.html'">
+                Go Home
+            </button>
+            <a href="https://github.com/toolpathguy/CSC102">Github Account</a> <!-- nav links to my social media accounts -->
+            <a href="https://www.linkedin.com/in/kevinastrom/">Linkedin</a> <!-- nav links to my social media accounts -->
+            <a href="https://www.instagram.com/toolpathguy/">Instagram</a> <!-- nav links to my social media accounts -->
+        </nav>
+    </footer>
+
+</body>
+</html>

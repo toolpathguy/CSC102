@@ -1,0 +1,99 @@
+/* Body Styling */
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 248, 255);
+    background-image: url("../../Module%203/assets/dotGridBG.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    margin: 0;
+    padding: 20px;
+    color: rgb(39, 39, 39);
+}
+
+/* Navigation Button Styling */
+nav
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav button
+{
+    padding: 10px 20px;
+    background-color: rgb(20, 172, 237);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover
+{
+    background-color: rgb(15, 130, 180);
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+nav button:active
+{
+    background-color: rgb(10, 100, 150);
+    transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+
+/* Header Styling */
+h1
+{
+    text-align: center;
+    color: rgb(20, 172, 237);
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+th, td
+{
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    text-align: left;
+}
+
+th
+{
+    background-color: rgb(20, 172, 237);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgb(240, 248, 255); /* Light background for even rows */
+}
+
+tr:nth-child(odd)
+{
+    background-color: rgb(214, 214, 214); /* Light background for even rows */
+}
+
+tr:hover
+{
+    background-color: rgb(220, 235, 245); /* Highlight row on hover */
+}
+
+/* Footer Styling (if needed) */
+footer
+{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(39, 39, 39);
+}
